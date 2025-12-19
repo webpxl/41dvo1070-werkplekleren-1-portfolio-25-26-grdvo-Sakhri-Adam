@@ -1,0 +1,35 @@
+body{
+    background-color: #071737;
+    margin:0;
+}
+h1{
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-size: 30px;
+    font-family: merriweather, sans-serif;
+    text-align: center;
+}
+p{
+    color: #3a3a3a;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: merriweather, sans-serif;
+}
+.persoonsGegevens{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: 5px solid #0d3075;
+}
+.hero{
+    justify-content: flex-end;
+    background: url('Assets/12979732_5102024.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 5px solid #0d3075;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 0 10px;
+}
