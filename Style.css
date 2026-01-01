@@ -1,35 +1,107 @@
+html, body { height: 100%; }
+
+/* Center page and ensure everything fits on one viewport */
 body{
     background-color: #071737;
     margin:0;
+    display: flex;
+    align-items: center;
+    /* place content at the right side of the viewport */
+    justify-content: flex-end;
+    /* add a small right padding so the card doesn't touch the edge */
+    padding-right: 16px;
+    height: 100vh;
+    overflow: hidden; /* avoid scrolling so everything must fit */
 }
 h1{
     color: rgb(0, 0, 0);
     margin: 0;
-    font-size: 30px;
-    font-family: merriweather, sans-serif;
+    /* responsive, smaller heading so it fits */
+    font-size: clamp(18px, 3.5vw, 28px);
+    font-family: merriweather, serif;
+    font-weight: bolder;
     text-align: center;
 }
 p{
-    color: #3a3a3a;
+    color: #000000;
     margin: 0;
-    font-size: 20px;
+    font-size: clamp(12px, 2.5vw, 16px);
     font-weight: bold;
-    font-family: merriweather, sans-serif;
+    font-family: merriweather, serif;
 }
 .persoonsGegevens{
-    background-color: rgb(255, 255, 255);
+    background-color: #aaaaaa;
     border-radius: 15px;
     border: 5px solid #0d3075;
+    p{
+
+    };
 }
 .hero{
     justify-content: flex-end;
-    background: url('Assets/12979732_5102024.jpg');
+    /* inner background + outer gradient border (uses transparent border and double background) */
+    background: linear-gradient(to bottom, #aaaaaa, #E9E6DD) padding-box,
+                linear-gradient(to bottom, #001B2C, #0274BD, #FFFFFF, #013557) border-box;
+    /* keep background sizing consistent for both layers if needed */
     background-size: cover;
     display: flex;
     flex-direction: column;
-    width: 250px;
-    border: 5px solid #0d3075;
+    /* fit into one page: limit width and height */
+    width: min(360px, 22%);
+    max-width: 360px;
+    height: 90vh; /* occupy most of viewport height but leave small margin */
+    max-height: 900px;
+    border: 5px solid transparent; /* width & style for the gradient border */
     border-radius: 15px;
-    margin: 10px;
-    padding: 0 10px;
+    margin: 8px;
+    padding: 6px 8px;
 }
+.mood{
+    margin-top: 12px;
+    background: rgba(255,255,255,0.03);
+    padding: 10px;
+    border-radius: 10px;
+    color: #000000;
+    width: 100%;
+    box-sizing: border-box;
+    /* make mood flexible and fit its parent without overflowing */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1 1 auto;
+}
+
+.mood canvas{
+    width: 100% !important; /* make Chart.js canvas responsive inside layout */
+    /* set diagram to a reasonable portion of the card so everything fits */
+    height: 30%;
+    max-height: 220px;
+}
+
+/* scale down icons / image if present */
+.hero img{
+    /* ensure the image always renders at a visible size */
+    display: block;
+    width: 120px;        /* fixed display size that's large enough */
+    height: 120px;
+    min-width: 96px;     /* fallback for very small screens */
+    min-height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+}
+
+/* tighten spacing for personal info box */
+.persoonsGegevens{
+    padding: 8px;
+}
+.persoonsGegevens p{ margin:6px 0; font-size: clamp(11px, 2.2vw, 14px); }
+
+/* make admin controls smaller */
+#adminControls label, #adminControls .form-label{ font-size: 12px; }
+#adminControls .form-select, #adminControls .form-range{ font-size: 12px; }
+
+/* reduce heading inside mood box */
+.mood .h5{ font-size: clamp(14px, 2.5vw, 18px); }
+
+/* table removed; no moodTable selectors needed */
