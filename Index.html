@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>Adam.Sakhri.protfolio</title>
     <!-- Bootstrap CSS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -14,10 +14,12 @@
 <section class="hero">
     <!-- Gebruik een browser-compatibele afbeelding uit Assets zodat de <img> altijd werkt -->
 
+    <img id="heroImg" src="Assets/12979732_5102024.jpg" alt="Adam Sakhri" onerror="this.style.display='none'" />
+
     <h1>Sakhri Adam</h1>
     <div class="persoonsGegevens">
-        <p>0492436359</p>
         <p>Sakhriadam5@gmail.com</p>
+        <p>0492436359</p>
         <p>Bergstraat 8, Meerhout 2450</p>
     </div>
     <div class="mood">
@@ -29,7 +31,9 @@
         </div>
 
         <!-- canvas is responsive; width/height attributes removed so CSS and Chart.js control sizing -->
-        <canvas id="moodChart"></canvas>
+        <div class="chart-container">
+            <canvas id="moodChart"></canvas>
+        </div>
 
         <div id="adminControls" class="mt-2" style="display:none;">
             <label for="moodType" class="form-label">Type:</label>
@@ -46,9 +50,32 @@
             </div>
         </div>
 
+        <!-- date list for each mood (keeps single latest entry per mood) -->
+        <div id="mood-dates" class="mt-2"></div>
+
         <!-- Tabel volledig verwijderd per verzoek: geen tijd/tabelsectie meer -->
     </div>
 </section>
+<section class="main-content">
+    <!-- Compact interactive timeline: show years as small chips; hover or click to see details -->
+    <div id="timeline-group" class="timeline-group mb-3" aria-label="Persoonlijke tijdslijn-groep">
+        <div id="timeline" class="mb-3" aria-label="Persoonlijke tijdslijn">
+            <span class="timeline-arrow-indicator" aria-hidden="true"></span>
+            <!-- timeline items inserted statically here -->
+            <button class="timeline-item" data-title="Opleiding: Scratch" data-details="Opleiding: Scratch" data-year="2015">2015</button>
+            <button class="timeline-item" data-title="1e graad: Sport Wetenschappen & Stem-Techniek" data-details="1e graad: Sport Wetenschappen en Stem-Techniek" data-year="2019">2019</button>
+            <button class="timeline-item" data-title="2e graad: Elektriciteit" data-details="2e graad: Elektriciteit" data-year="2021">2021</button>
+            <button class="timeline-item" data-title="3e graad: Datacommunicatie & Netwerkinstallaties" data-details="3e graad: Datacommunicatie en Netwerkinstallaties" data-year="2023">2023</button>
+            <button class="timeline-item" data-title="Stage Unit-T" data-details="Stage: Unit-T (nov 2023) - Taken: Telenet wifi en TV boxen installeren bij klanten" data-year="2023">nov 2023</button>
+            <button class="timeline-item" data-title="Stage Goed Beveiligd" data-details="Stage: Goed Beveiligd (feb 2025) - Taken: camera's en systemen aansluiten" data-year="2025">feb 2025</button>
+            <button class="timeline-item" data-title="Stage Deconet Laakdal" data-details="Stage: Deconet Laakdal (nov 2025) - Taken: installeren van laptops, gegevens overzetten, pc's bouwen en herstellen" data-year="2025">nov 2025</button>
+            <button class="timeline-item" data-title="Graduaat Web of Design" data-details="Opleiding: Graduaat Web of Design (2025 - heden)" data-year="2025">2025</button>
+        </div>
+        <div id="timeline-detail" class="p-2 small text-muted">Hover over of klik op een jaar om details te zien.</div>
+    </div>
+
+</section>
+
 
 
 

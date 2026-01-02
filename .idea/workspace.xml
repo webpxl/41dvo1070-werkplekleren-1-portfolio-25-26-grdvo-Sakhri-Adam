@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="Eerste elementen geplaatst van patroone achtergrond tot gegevens en achtergrond kluer .">
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="heb een de diagram gemaakt ook heb ik mijn gegevens vak gemaakt de foto moet ik nog maken en als laats heb ik de lay out gemaakt.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +96,10 @@
       <workItem from="1766498922769" duration="671000" />
       <workItem from="1766499643727" duration="125000" />
       <workItem from="1767187575137" duration="8101000" />
-      <workItem from="1767286161139" duration="9582000" />
+      <workItem from="1767286161139" duration="9724000" />
+      <workItem from="1767299767031" duration="282000" />
+      <workItem from="1767364301939" duration="10000" />
+      <workItem from="1767365491688" duration="13366000" />
     </task>
     <task id="LOCAL-00001" summary="Eerste elementen geplaatst van patroone achtergrond tot gegevens en achtergrond kluer .">
       <option name="closed" value="true" />
@@ -106,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766187913643</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="heb een de diagram gemaakt ook heb ik mijn gegevens vak gemaakt de foto moet ik nog maken en als laats heb ik de lay out gemaakt.">
+      <option name="closed" value="true" />
+      <created>1767299510666</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1767299510666</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,7 +125,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Eerste elementen geplaatst van patroone achtergrond tot gegevens en achtergrond kluer ." />
-    <option name="LAST_COMMIT_MESSAGE" value="Eerste elementen geplaatst van patroone achtergrond tot gegevens en achtergrond kluer ." />
+    <MESSAGE value="heb een de diagram gemaakt ook heb ik mijn gegevens vak gemaakt de foto moet ik nog maken en als laats heb ik de lay out gemaakt." />
+    <option name="LAST_COMMIT_MESSAGE" value="heb een de diagram gemaakt ook heb ik mijn gegevens vak gemaakt de foto moet ik nog maken en als laats heb ik de lay out gemaakt." />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
