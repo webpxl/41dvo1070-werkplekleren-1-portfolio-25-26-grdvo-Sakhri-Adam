@@ -89,12 +89,13 @@ header{
     left: 0;
     top: 0;
     width: 30%;
+    height: 70%;
 }
 
 .hero{
     position: absolute;
     width: 70%;
-    height: 84.5%;
+    height: 70%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;

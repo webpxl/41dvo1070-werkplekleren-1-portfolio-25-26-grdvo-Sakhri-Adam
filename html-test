@@ -1,0 +1,175 @@
+<div class="dashboard-grid">
+  <div class="content-column">
+    <section class="main-content">
+      <!-- Compact interactive timeline: show years as small chips; hover or click to see details -->
+      <div id="timeline-group" class="timeline-group mb-3" aria-label="Persoonlijke tijdslijn-groep">
+          <div id="timeline" class="mb-3" aria-label="Persoonlijke tijdslijn">
+              <span class="timeline-arrow-indicator" aria-hidden="true"></span>
+              <!-- timeline items inserted statically here -->
+              <button class="timeline-item" data-title="Opleiding: Scratch" data-details="Opleiding: Scratch" data-year="2015">2015</button>
+              <button class="timeline-item" data-title="1e graad: Sport Wetenschappen & Stem-Techniek" data-details="1e graad: Sport Wetenschappen en Stem-Techniek" data-year="2019">2019</button>
+              <button class="timeline-item" data-title="2e graad: Elektriciteit" data-details="2e graad: Elektriciteit" data-year="2021">2021</button>
+              <button class="timeline-item" data-title="3e graad: Datacommunicatie & Netwerkinstallaties" data-details="3e graad: Datacommunicatie en Netwerkinstallaties" data-year="2023">2023</button>
+              <button class="timeline-item" data-title="Stage Unit-T" data-details="Stage: Unit-T (nov 2023) - Taken: Telenet wifi en TV boxen installeren bij klanten" data-year="2023">nov 2023</button>
+              <button class="timeline-item" data-title="Stage Goed Beveiligd" data-details="Stage: Goed Beveiligd (feb 2025) - Taken: camera's en systemen aansluiten" data-year="2025">feb 2025</button>
+              <button class="timeline-item" data-title="Stage Deconet Laakdal" data-details="Stage: Deconet Laakdal (nov 2025) - Taken: installeren van laptops, gegevens overzetten, pc's bouwen en herstellen" data-year="2025">nov 2025</button>
+              <button class="timeline-item" data-title="Graduaat Web of Design" data-details="Opleiding: Graduaat Web of Design (2025 - heden)" data-year="2025">2025</button>
+          </div>
+          <div id="timeline-detail" class="p-2 small text-muted">Hover over of klik op een jaar om details te zien.</div>
+      </div>
+    </section>
+
+    <!-- Inserted dashboard HTML from dashboard.html -->
+    <section class="main-content p-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h1>Dashboard</h1>
+            <div>
+                <!-- admin login controls -->
+                <input id="adminPassword" aria-label="Admin wachtwoord" type="password" placeholder="Admin wachtwoord" class="form-control form-control-sm d-inline-block" style="width:160px">
+                <button id="adminLoginBtn" class="btn btn-sm btn-primary ms-2">Login als admin</button>
+                <button id="adminLogoutBtn" class="btn btn-sm btn-outline-secondary ms-2 admin-only" style="display:none;">Logout</button>
+            </div>
+        </div>
+
+        <p>Gebruik alleen de kleuren die al in de site aanwezig zijn (de blauwe / donker tinten).</p>
+
+        <div class="row">
+            <div class="col-md-7">
+                <!-- Chart block (separate background) -->
+                <div class="separate-block">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Spindiagram (Radar)</h5>
+                            <p class="card-text small">Hier staat de radar/spindiagram. Bezoekers kunnen de data zien, alleen de admin kan de waarden aanpassen.</p>
+                            <div class="chart-container" style="height:360px;">
+                                <canvas id="radarChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info block (separate background) -->
+                <div class="separate-block">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Waar voer ik mijn gegevens in?</h5>
+                            <p class="small">Als admin: gebruik het formulier rechts ("Gegevens invoer") om de waarden voor elk onderdeel in te voeren en klik <strong>Opslaan</strong>. De diagram vervangt de oude waarden zodra je opslaat.</p>
+                            <p class="small">De waarden lopen van 0 tot 10 en de schaal van de diagram is per 1.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-5">
+                <!-- Form block (separate background) -->
+                <div class="separate-block">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Gegevens invoer <small class="text-muted">(admin-only)</small></h5>
+
+                            <!-- Admin-only form; hidden/disabled for visitors -->
+                            <form id="dataForm" class="admin-only" style="display:none;">
+                                <div class="mb-2">
+                                    <label for="techInput" class="form-label">Technisch</label>
+                                    <input id="techInput" type="number" min="0" max="10" value="6" class="form-control form-control-sm data-field" name="tech">
+                                </div>
+                                <div class="mb-2">
+                                    <label for="commInput" class="form-label">Communicatie</label>
+                                    <input id="commInput" type="number" min="0" max="10" value="5" class="form-control form-control-sm data-field" name="comm">
+                                </div>
+                                <div class="mb-2">
+                                    <label for="solveInput" class="form-label">Probleemoplossing</label>
+                                    <input id="solveInput" type="number" min="0" max="10" value="7" class="form-control form-control-sm data-field" name="solve">
+                                </div>
+                                <div class="mb-2">
+                                    <label for="teamInput" class="form-label">Teamwork</label>
+                                    <input id="teamInput" type="number" min="0" max="10" value="4" class="form-control form-control-sm data-field" name="team">
+                                </div>
+                                <div class="mb-2">
+                                    <label for="creaInput" class="form-label">Creativiteit</label>
+                                    <input id="creaInput" type="number" min="0" max="10" value="6" class="form-control form-control-sm data-field" name="crea">
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <button id="saveData" type="button" class="btn btn-primary btn-sm">Opslaan</button>
+                                    <button id="resetData" type="button" class="btn btn-outline-danger btn-sm">Reset</button>
+                                </div>
+                            </form>
+
+                            <div id="visitorNotice" class="mt-2 small text-muted">Bezoekers zien alleen de diagram en de toelichting; zij kunnen niets wijzigen.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notes block (separate background) -->
+                <div class="separate-block">
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <h6>Opmerkingen</h6>
+                            <ul class="small">
+                                <li>Alle kleuren gebruikt door de diagram komen uit de bestaande CSS-variabelen (zie Style.css).</li>
+                                <li>De diagram schaal is per 1 (tick size = 1).</li>
+                                <li>Wanneer de admin nieuwe waarden opslaat, vervangt dat de oude waarden (er is slechts één dataset).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+  </div>
+
+  <aside class="sidebar">
+    <section class="hero">
+
+        <img id="heroImg" src="Assets/Pfoto1.jpg" alt="fotoAdamSakhri"/>
+
+        <h1>Sakhri Adam</h1>
+        <div class="persoonsGegevens">
+            <a class="contact-link" href="mailto:Sakhriadam5@gmail.com"><p>Sakhriadam5@gmail.com</p></a>
+            <a class="contact-link" href="tel:0492436359"><p>0492436359</p></a>
+            <a class="contact-link" href="https://maps.app.goo.gl/9z7yCMCUWEumcYzs5"><p>Meerhout 2440</p></a>
+        </div>
+        <div class="mood">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h2 class="h5 mb-0">Mood</h2>
+                <div>
+                    <button id="adminToggle" class="btn btn-sm btn-outline-primary">Login als admin</button>
+                </div>
+            </div>
+
+
+            <div class="chart-container">
+                <canvas id="moodChart"></canvas>
+            </div>
+
+            <div id="adminControls" class="mt-2" style="display:none;">
+                <label for="moodType" class="form-label">Type:</label>
+                <select id="moodType" class="form-select form-select-sm mb-2">
+                    <option value="Happiness">Happiness</option>
+                    <option value="Bored">Bored</option>
+                    <option value="Stress">Stress</option>
+                </select>
+                <label for="moodRange" class="form-label">Stel mood in:</label>
+                <input type="range" id="moodRange" min="0" max="10" value="5" class="form-range">
+                <div class="d-flex gap-2 mt-2">
+                    <button id="addMood" class="btn btn-primary btn-sm">Voeg toe</button>
+                    <button id="clearMood" class="btn btn-danger btn-sm">Wis</button>
+                </div>
+            </div>
+
+
+            <div id="mood-dates" class="mt-2"></div>
+
+
+        </div>
+    </section>
+  </aside>
+</div>
+
+<!-- Chart.js for drawing the mood chart -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="index.js"></script>
