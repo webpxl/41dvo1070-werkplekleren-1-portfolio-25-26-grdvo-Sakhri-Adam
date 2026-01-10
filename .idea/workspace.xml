@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="heb de tijdlijn aangemaakt van mijn schoolcarierre dan ook gewerkt aan de layout">
-      <change afterPath="$PROJECT_DIR$/Assets/Image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Pfoto1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html-test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Sakhri-Adam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Sakhri-Adam.iml" afterDir="false" />
+    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="even de  foto en de intro even laag zetten">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +107,9 @@
       <workItem from="1767899985809" duration="8043000" />
       <workItem from="1767962406808" duration="188000" />
       <workItem from="1767983239532" duration="1710000" />
-      <workItem from="1767993229744" duration="12012000" />
+      <workItem from="1767993229744" duration="12580000" />
+      <workItem from="1768005917871" duration="1000" />
+      <workItem from="1768051482662" duration="5316000" />
     </task>
     <task id="LOCAL-00001" summary="Eerste elementen geplaatst van patroone achtergrond tot gegevens en achtergrond kluer .">
       <option name="closed" value="true" />
@@ -138,7 +135,23 @@
       <option name="project" value="LOCAL" />
       <updated>1767385045617</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Terug van start begonenn wel beter gewerkt met behulp van mijn figma versie foto, navigatie, gegevens, geplaats">
+      <option name="closed" value="true" />
+      <created>1768005411367</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1768005411367</updated>
+    </task>
+    <task id="LOCAL-00005" summary="even de  foto en de intro even laag zetten">
+      <option name="closed" value="true" />
+      <created>1768005831334</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1768005831334</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +161,9 @@
     <MESSAGE value="Eerste elementen geplaatst van patroone achtergrond tot gegevens en achtergrond kluer ." />
     <MESSAGE value="heb een de diagram gemaakt ook heb ik mijn gegevens vak gemaakt de foto moet ik nog maken en als laats heb ik de lay out gemaakt." />
     <MESSAGE value="heb de tijdlijn aangemaakt van mijn schoolcarierre dan ook gewerkt aan de layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="heb de tijdlijn aangemaakt van mijn schoolcarierre dan ook gewerkt aan de layout" />
+    <MESSAGE value="Terug van start begonenn wel beter gewerkt met behulp van mijn figma versie foto, navigatie, gegevens, geplaats" />
+    <MESSAGE value="even de  foto en de intro even laag zetten" />
+    <option name="LAST_COMMIT_MESSAGE" value="even de  foto en de intro even laag zetten" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

@@ -9,31 +9,25 @@ body{
     box-sizing: border-box;
 }
 h1{
-    color: rgb(0, 0, 0);
+    color: #ffffff;
     margin: 0;
-
-    font-size: clamp(18px, 3.5vw, 28px);
-    font-family: merriweather, serif;
+    font-size: 250%;
+    font-family: Oswald, sans-serif;
     font-weight: bolder;
     text-align: center;
+    align-items: center;
 }
 p{
     color: #000000;
     margin: 0;
     font-size: clamp(12px, 2.5vw, 16px);
-    font-weight: bold;
-    font-family: merriweather, serif;
+    font-family: Oswald, sans-serif;
+    font-weight: lighter;
 }
 a{
     text-decoration: none;
 }
-.contact-link{
-    text-decoration: none;
-}
-.contact-link:hover{
-    font-family: merriweather, serif;
-    color: #0d3075;
-}
+
 
 nav{
     position: fixed;
@@ -72,38 +66,61 @@ li{
 }
 
 header{
-
     position: relative;
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: nowrap;
     width: 100%;
     height: 100%;
+}
 
+.profiel-foto{
+    width: 40%;
+    height:85% ;
     box-sizing: border-box;
-    padding: 0;
-    overflow: visible;
+    background: rgba(55, 55, 55, 0.18);
 }
-
 .me{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 30%;
-    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 5% 0 ;
 }
-
 .hero{
-    position: absolute;
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 85%;
+    max-height: 85%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    overflow: hidden;
+
     background: rgba(55, 55, 55, 0.18);
 }
+.over-mij{
+    display: flex;
+    align-items: center; /* vertically center contents inside the div */
+    justify-content: center; /* horizontally center contents */
+    text-align: center; /* ensure multiline text is centered */
+    align-self: center; /* center the block inside the parent .hero */
+    width: 100%;
+    height: 100%;
+    font-size: 150%; /* requested 150% on larger screens */
+    font-family: Oswald, sans-serif;
+    font-weight: lighter;
+    padding: 2% 10%;
+    box-sizing: border-box;
+}
+
+/* Responsive: make sure the .over-mij text scales down on small screens so it fits in the div */
+@media (max-width: 600px) {
+    .over-mij{
+        font-size: 1rem; /* reduce for phones */
+        padding: 3% 6%;
+    }
+}
+
 
 .persoonsgegevens{
     padding: 2%;
@@ -114,4 +131,11 @@ header{
     position: fixed;
     right: 2%;
     bottom: 2%;
+}
+.contact-link{
+    text-decoration: none;
+}
+.contact-link:hover{
+    font-family: merriweather, serif;
+    color: #0d3075;
 }
