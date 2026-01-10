@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="heb een de diagram gemaakt ook heb ik mijn gegevens vak gemaakt de foto moet ik nog maken en als laats heb ik de lay out gemaakt.">
+    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="heb de tijdlijn aangemaakt van mijn schoolcarierre dan ook gewerkt aan de layout">
+      <change afterPath="$PROJECT_DIR$/Assets/Image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Pfoto1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html-test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Sakhri-Adam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Sakhri-Adam.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +60,6 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/adams/OneDrive/Desktop/PXL 25-26/WPL1/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Sakhri-Adam&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
@@ -99,7 +102,17 @@
       <workItem from="1767286161139" duration="9724000" />
       <workItem from="1767299767031" duration="282000" />
       <workItem from="1767364301939" duration="10000" />
-      <workItem from="1767365491688" duration="13366000" />
+      <workItem from="1767365491688" duration="13663000" />
+      <workItem from="1767385072594" duration="9000" />
+      <workItem from="1767605794638" duration="202000" />
+      <workItem from="1767860761185" duration="453000" />
+      <workItem from="1767873502560" duration="117000" />
+      <workItem from="1767890154158" duration="1102000" />
+      <workItem from="1767892229719" duration="2731000" />
+      <workItem from="1767899985809" duration="8043000" />
+      <workItem from="1767962406808" duration="188000" />
+      <workItem from="1767983239532" duration="1710000" />
+      <workItem from="1767993229744" duration="12012000" />
     </task>
     <task id="LOCAL-00001" summary="Eerste elementen geplaatst van patroone achtergrond tot gegevens en achtergrond kluer .">
       <option name="closed" value="true" />
@@ -117,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767299510666</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="heb de tijdlijn aangemaakt van mijn schoolcarierre dan ook gewerkt aan de layout">
+      <option name="closed" value="true" />
+      <created>1767385045617</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1767385045617</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,7 +147,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Eerste elementen geplaatst van patroone achtergrond tot gegevens en achtergrond kluer ." />
     <MESSAGE value="heb een de diagram gemaakt ook heb ik mijn gegevens vak gemaakt de foto moet ik nog maken en als laats heb ik de lay out gemaakt." />
-    <option name="LAST_COMMIT_MESSAGE" value="heb een de diagram gemaakt ook heb ik mijn gegevens vak gemaakt de foto moet ik nog maken en als laats heb ik de lay out gemaakt." />
+    <MESSAGE value="heb de tijdlijn aangemaakt van mijn schoolcarierre dan ook gewerkt aan de layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="heb de tijdlijn aangemaakt van mijn schoolcarierre dan ook gewerkt aan de layout" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

@@ -1,22 +1,17 @@
 html, body { height: 100%; }
 
-/* Center page and ensure everything fits on one viewport */
 body{
-    background-color: #071737;
+    background-image: linear-gradient( to left  , #0d3075, #E9E6DD, #C4AD9D, #2353AD) ;
     margin:0;
     display: flex;
-    align-items: center;
-    /* place content at the right side of the viewport */
-    justify-content: flex-end;
-    /* add a small right padding so the card doesn't touch the edge */
-    padding-right: 16px;
-    height: 100vh;
-    overflow: hidden; /* avoid scrolling so everything must fit */
+    flex-wrap: wrap;
+    padding-top: 8vh;
+    box-sizing: border-box;
 }
 h1{
     color: rgb(0, 0, 0);
     margin: 0;
-    /* responsive, smaller heading so it fits */
+
     font-size: clamp(18px, 3.5vw, 28px);
     font-family: merriweather, serif;
     font-weight: bolder;
@@ -29,234 +24,93 @@ p{
     font-weight: bold;
     font-family: merriweather, serif;
 }
-.persoonsGegevens{
-    background-color: #aaaaaa;
-    border-radius: 15px;
-    border: 5px solid #000000;
-    p{
+a{
+    text-decoration: none;
+}
+.contact-link{
+    text-decoration: none;
+}
+.contact-link:hover{
+    font-family: merriweather, serif;
+    color: #0d3075;
+}
 
-    };
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    background-image: linear-gradient( to right   ,#000000, #112A57, #E9E6DD, #C4AD9D, #2353AD,#000000) ;
+    z-index: 1000;
+    padding: 0 2%;
+    box-sizing: border-box;
 }
-:root{
-    --g1: #001B2C;
-    --g2: #0274BD;
-    --g3: #FFFFFF;
-    --g4: #013557;
-    /* timeline gradient centralized so all timeline-related elements can reuse it */
-    --timeline-gradient: linear-gradient(to top, #A08E82, #E9E6DD);
-    /* defaults for background alignment used by JS */
-    --bg-pos-x: 0px;
-    --bg-pos-y: 0px;
-    --bg-size: cover;
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
-.hero{
+
+ul{
+    list-style-type: none;
+
+    display: flex;
+}
+
+li{
+    margin: 0 10px;
+
+}
+
+header{
+
+    position: relative;
+    display: flex;
     justify-content: flex-end;
-    /* inner background + outer gradient border (uses transparent border and double background) */
-    background: linear-gradient(to bottom, #aaaaaa, #E9E6DD) padding-box,
-                linear-gradient(to bottom, var(--g1), var(--g2), var(--g3), var(--g4)) border-box;
-    /* keep background sizing consistent for both layers if needed */
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+    padding: 0;
+    overflow: visible;
+}
+
+.me{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+}
+
+.hero{
+    position: absolute;
+    width: 70%;
+    height: 84.5%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* fit into one page: limit width and height per requests: hero width 20%, height 100% */
-    width: 20%;
-    min-width: 180px;
-    max-width: 420px;
-    height: 100vh; /* occupy full viewport height */
-    border: 5px solid transparent; /* width & style for the gradient border */
-    border-radius: 15px;
+    justify-content: flex-start;
     overflow: hidden;
-    margin: 8px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-.mood{
-    margin-top: 12px;
-    background: linear-gradient(to bottom, #E9E6DD, #aaaaaa);
-    padding: 10px;
-    border-radius: 10px;
-    color: #000000;
-    width: 100%;
-    box-sizing: border-box;
-    /* make mood flexible and fit its parent without overflowing */
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    flex: 1 1 auto;
+    background: rgba(55, 55, 55, 0.18);
 }
 
-/* Chart layout: taller and thinner per request. Chart height set to 40% of hero by user later; use 40% here */
-.chart-container{
-    width: 100%;
-    height: 40%; /* canvas area height */
-    min-height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.mood canvas{
-    width: 90% !important; /* reduce width so bars are centered and thin */
-    height: 100% !important; /* scale with container */
-}
-
-/* scale down icons / image if present */
-.hero img{
-    /* ensure the image always renders at a visible size */
-    display: block;
-    width: 160px;        /* display size that's large enough */
-    height: 160px;
-    min-width: 120px;     /* fallback for very small screens */
-    min-height: 120px;
-    border-radius: 12px;
-    object-fit: cover;
-    align-self: center;
-    margin-bottom: 6px;
-}
-
-/* timeline styles */
-/* timeline group: this group will own the shared background */
-
-
-#timeline::before{
-    /* vertical timeline line still positioned relative to #timeline */
-    content: '';
-    position: absolute;
-    left: 28px;
-    top: 12px;
-    bottom: 12px;
-    width: 4px;
-    background: var(--timeline-gradient);
-    border-radius: 2px;
-    opacity: 0.95;
-}
-
-/* Arrow indicator placed below the timeline line with a connecting line */
-.timeline-arrow-indicator{
-    position: absolute;
-    left: 28px; /* align with the vertical line */
-    bottom: -18px; /* place just under the timeline box */
-    width: 0;
-    height: 0;
-    pointer-events: revert;
-}
-
-.timeline-arrow-indicator::before{
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -18px; /* lines up to the bottom of the timeline */
-    width: 4px;
-    height: 18px;
-    background: var(--timeline-gradient);
-    border-radius: 2px;
-}
-
-.timeline-arrow-indicator::after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 2px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 12px solid #6e0202; /* arrow color matches gradient start */
-}
-
-/* Make timeline items inherit background positioning from the group via variables set by JS */
-.timeline-item{
-    background: transparent;
-    border: none;
-    padding:6px 12px;
-    margin-right:0;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:13px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #000000; /* set timeline text to black per request */
-    flex: 0 0 auto; /* don't shrink, keep intrinsic width */
-    white-space: nowrap; /* prevent internal wrapping */
-}
-
-/* small visual improvements for the scrollbar (non-intrusive) */
-#timeline::-webkit-scrollbar{ height:8px }
-#timeline::-webkit-scrollbar-thumb{ background: rgba(255,255,255,0.08); border-radius:4px }
-#timeline::-webkit-scrollbar-track{ background: transparent }
-
-#timeline-detail{
-    min-height:38px;
-    display: block;
-    margin-top:8px;
-    color: #000000; /* set detail text to black */
-}
-
-/* tighten spacing for personal info box */
-.persoonsGegevens{
-    padding: 8px;
-    background: linear-gradient(to bottom, #E9E6DD, #aaaaaa);
-
-}
-.persoonsGegevens p{ margin:6px 0; font-size: clamp(11px, 2.2vw, 14px); }
-
-/* make admin controls smaller */
-#adminControls label, #adminControls .form-label{ font-size: 12px; }
-#adminControls .form-select, #adminControls .form-range{ font-size: 12px; }
-
-/* reduce heading inside mood box */
-.mood .h5{ font-size: clamp(14px, 2.5vw, 18px); }
-
-/* center main-content and make it narrower since hero is right-aligned */
-.main-content{ width: 60%; padding: 24px; color:#eee; overflow:auto;
-    /* pattern background using the supplied asset with a dark overlay for contrast */
-    background-image: url('Assets/12979732_5102024.jpg');
-    background-repeat: repeat;
+.persoonsgegevens{
+    padding: 2%;
+    background: linear-gradient(to bottom, #aaaaaa, #E9E6DD) padding-box,
+                linear-gradient(to bottom, #001B2C, #0274BD, #FFFFFF,#013557 ) border-box;
+    border: 5px solid #000000;
     border-radius: 15px;
-    background-size: 50%; /* control pattern scale */
-    border: 4px solid transparent;
-    border-image: linear-gradient(to bottom, #013557, #ffffff, #c4ad9d, #0273bc) 1;
-}
-#timeline-group{
-    position: relative;
-    display: block;
-    padding:  6px;
-    border-radius: 15px;
-    background: var(--timeline-gradient);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: 0 0;
-    overflow: hidden; /* ensure arrow isn't cut off */
-    /* room for the arrow */
-}
-
-#timeline{
-    position: relative;
-    display:flex;
-    flex-wrap:nowrap; /* keep items in one line */
-    gap:8px;
-    align-items: center;
-    padding: 12px 12px 12px 56px; /* room for the line + arrow on the left */
-    border-radius: 6px;
-    background: transparent; /* moved to group */
-    overflow-x: auto; /* allow horizontal scroll when needed */
-    -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
-}
-/* ensure buttons and interactive elements are visible */
-button{
-    font-family: inherit }
-
-/* responsive tweaks */
-@media (max-width: 900px){
-    .hero{ width: 36%; }
-    .main-content{ width: 56%; }
-}
-@media (max-width: 640px){
-    body{ flex-direction: column; align-items: stretch; justify-content:flex-start; padding-right:0 }
-    .hero{ width: 100%; height: auto; max-height: 420px }
-    .main-content{ width: 100%; padding:12px }
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
 }
