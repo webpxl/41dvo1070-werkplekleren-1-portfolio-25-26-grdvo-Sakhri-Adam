@@ -5,13 +5,13 @@ body{
     margin:0;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 8vh;
+    padding-top: 5%;
     box-sizing: border-box;
 }
 h1{
     color: #ffffff;
     margin: 0;
-    font-size: 250%;
+    font-size: 200%;
     font-family: Oswald, sans-serif;
     font-weight: bolder;
     text-align: center;
@@ -34,7 +34,7 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    height: 8vh;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,6 @@ nav{
     padding: 0 2%;
     box-sizing: border-box;
 }
-
 .main-nav{
     display: flex;
     align-items: center;
@@ -59,7 +58,6 @@ ul{
 
     display: flex;
 }
-
 li{
     margin: 0 10px;
 
@@ -69,10 +67,9 @@ header{
     position: relative;
     display: flex;
     flex-wrap: nowrap;
-    width: 100%;
+    width: 70%; /* changed from 100% so timeline can sit on the right */
     height: 100%;
 }
-
 .profiel-foto{
     width: 40%;
     height:85% ;
@@ -80,9 +77,11 @@ header{
     background: rgba(55, 55, 55, 0.18);
 }
 .me{
-    display: flex;
+    display: block;
     justify-content: flex-start;
-    width: 100%;
+    align-content: center;
+    align-self: center;
+    width: auto;
     height: 100%;
     padding: 5% 0 ;
 }
@@ -98,44 +97,149 @@ header{
 
     background: rgba(55, 55, 55, 0.18);
 }
+
+
+
+.persoonsgegevens{
+    position: fixed;
+    left: 2%;
+    bottom: 2%;
+    padding: 2%;
+    background: linear-gradient(to bottom, rgb(13, 48, 117), rgb(9, 67, 131), rgb(233, 230, 221), rgb(196, 173, 157));
+    border: 5px solid #0d3075;
+    border-radius: 15px;
+    z-index: 9999;
+}
+
+.contact-link{
+    font-family: oswald, sans-serif;
+    color: #ffffff;
+}
+.contact-link:hover{
+    font-family: merriweather, serif;
+    color: #0d3075;
+}
+
+
+
+.timeline{
+    width: 28%;
+    align-self: flex-start;
+    margin-left: auto;
+    margin-top: 6vh;
+    padding: 2% 2%;
+    box-sizing: border-box;
+}
+.timeline {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    position: relative;
+    padding-left: 40px;
+    max-width: 800px;
+    margin: 0 0;
+}
+.timeline h1{
+    font-size: 1.4rem;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+
+.timeline-item{
+    background: rgba(255,255,255,0.85);
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.timeline .year{
+    display: block;
+    font-weight: 700;
+    color: #2353AD;
+    margin-bottom: 0.4rem;
+}
+
 .over-mij{
     display: flex;
-    align-items: center; /* vertically center contents inside the div */
-    justify-content: center; /* horizontally center contents */
-    text-align: center; /* ensure multiline text is centered */
-    align-self: center; /* center the block inside the parent .hero */
-    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    align-self: center;
     height: 100%;
-    font-size: 150%; /* requested 150% on larger screens */
+    font-size: 100%;
     font-family: Oswald, sans-serif;
     font-weight: lighter;
     padding: 2% 10%;
     box-sizing: border-box;
 }
 
-/* Responsive: make sure the .over-mij text scales down on small screens so it fits in the div */
 @media (max-width: 600px) {
     .over-mij{
-        font-size: 1rem; /* reduce for phones */
+        font-size: 1rem;
         padding: 3% 6%;
     }
 }
 
+.timeline h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #112A57;
+}
 
-.persoonsgegevens{
-    padding: 2%;
-    background: linear-gradient(to bottom, #aaaaaa, #E9E6DD) padding-box,
-                linear-gradient(to bottom, #001B2C, #0274BD, #FFFFFF,#013557 ) border-box;
-    border: 5px solid #000000;
-    border-radius: 15px;
-    position: fixed;
-    right: 2%;
-    bottom: 2%;
+/* Verticale lijn */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #2353AD;
+    border-radius: 10px;
 }
-.contact-link{
-    text-decoration: none;
+
+.timeline-item {
+    justify-content: flex-end;
+    margin-bottom: 40px;
+    position: relative;
 }
-.contact-link:hover{
-    font-family: merriweather, serif;
-    color: #0d3075;
+
+
+.year {
+    font-weight: bold;
+    color: #2353AD;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.content {
+    background-color: #C4AD9D;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.content h2 {
+    color: #112A57;
+    margin-bottom: 10px;
+}
+
+.content p {
+    line-height: 1.6;
+}
+
+/* Responsive: on narrow screens, stack header and timeline full width */
+@media (max-width: 900px){
+    header{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .timeline{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2vh;
+        padding: 4% 3%;
+    }
 }

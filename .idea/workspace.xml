@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="even de  foto en de intro even laag zetten">
+    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="Ik heb de text over mij toegevoed en mooi geplaats daarna mijn naam in de hoek geplaatst en daarna ook de foto mooie layout gegeven">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css" afterDir="false" />
@@ -109,7 +109,7 @@
       <workItem from="1767983239532" duration="1710000" />
       <workItem from="1767993229744" duration="12580000" />
       <workItem from="1768005917871" duration="1000" />
-      <workItem from="1768051482662" duration="5316000" />
+      <workItem from="1768051482662" duration="17615000" />
     </task>
     <task id="LOCAL-00001" summary="Eerste elementen geplaatst van patroone achtergrond tot gegevens en achtergrond kluer .">
       <option name="closed" value="true" />
@@ -151,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768005831334</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Ik heb de text over mij toegevoed en mooi geplaats daarna mijn naam in de hoek geplaatst en daarna ook de foto mooie layout gegeven">
+      <option name="closed" value="true" />
+      <created>1768058193001</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1768058193001</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +171,8 @@
     <MESSAGE value="heb de tijdlijn aangemaakt van mijn schoolcarierre dan ook gewerkt aan de layout" />
     <MESSAGE value="Terug van start begonenn wel beter gewerkt met behulp van mijn figma versie foto, navigatie, gegevens, geplaats" />
     <MESSAGE value="even de  foto en de intro even laag zetten" />
-    <option name="LAST_COMMIT_MESSAGE" value="even de  foto en de intro even laag zetten" />
+    <MESSAGE value="Ik heb de text over mij toegevoed en mooi geplaats daarna mijn naam in de hoek geplaatst en daarna ook de foto mooie layout gegeven" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ik heb de text over mij toegevoed en mooi geplaats daarna mijn naam in de hoek geplaatst en daarna ook de foto mooie layout gegeven" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
