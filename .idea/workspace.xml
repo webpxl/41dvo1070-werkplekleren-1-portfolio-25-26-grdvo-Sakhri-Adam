@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="Ik heb de text over mij toegevoed en mooi geplaats daarna mijn naam in de hoek geplaatst en daarna ook de foto mooie layout gegeven">
+    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="Heb een tijdslijn aangemaakt voor mijn school carierre daarnaast heb ik de persoons gegevens een lay out gegeven">
+      <change afterPath="$PROJECT_DIR$/Assets/markus-winkler-Q2J2qQsoYH8-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projecten.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css" afterDir="false" />
@@ -19,6 +21,7 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -48,25 +51,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/adams/OneDrive/Desktop/PXL 25-26/WPL1/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Sakhri-Adam&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/adams/OneDrive/Desktop/PXL 25-26/WPL1/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Sakhri-Adam",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -109,7 +113,8 @@
       <workItem from="1767983239532" duration="1710000" />
       <workItem from="1767993229744" duration="12580000" />
       <workItem from="1768005917871" duration="1000" />
-      <workItem from="1768051482662" duration="17615000" />
+      <workItem from="1768051482662" duration="18118000" />
+      <workItem from="1768135889620" duration="24961000" />
     </task>
     <task id="LOCAL-00001" summary="Eerste elementen geplaatst van patroone achtergrond tot gegevens en achtergrond kluer .">
       <option name="closed" value="true" />
@@ -159,7 +164,23 @@
       <option name="project" value="LOCAL" />
       <updated>1768058193001</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Heb een tijdslijn aangemaakt voor mijn school carierre daarnaast heb ik de persoons gegevens een lay out gegeven">
+      <option name="closed" value="true" />
+      <created>1768084705532</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1768084705532</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Heb een tijdslijn aangemaakt voor mijn school carierre daarnaast heb ik de persoons gegevens een lay out gegeven">
+      <option name="closed" value="true" />
+      <created>1768085071002</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1768085071002</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +193,8 @@
     <MESSAGE value="Terug van start begonenn wel beter gewerkt met behulp van mijn figma versie foto, navigatie, gegevens, geplaats" />
     <MESSAGE value="even de  foto en de intro even laag zetten" />
     <MESSAGE value="Ik heb de text over mij toegevoed en mooi geplaats daarna mijn naam in de hoek geplaatst en daarna ook de foto mooie layout gegeven" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ik heb de text over mij toegevoed en mooi geplaats daarna mijn naam in de hoek geplaatst en daarna ook de foto mooie layout gegeven" />
+    <MESSAGE value="Heb een tijdslijn aangemaakt voor mijn school carierre daarnaast heb ik de persoons gegevens een lay out gegeven" />
+    <option name="LAST_COMMIT_MESSAGE" value="Heb een tijdslijn aangemaakt voor mijn school carierre daarnaast heb ik de persoons gegevens een lay out gegeven" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
