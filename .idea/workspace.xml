@@ -4,18 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="lay out aangepast ook de contacten aangepast daarna ben ik begonnen met de projesten en heb ik de tijdslijn gepositioneerd">
-      <change afterPath="$PROJECT_DIR$/Assets/camila-blando-NNPHctRuAi8-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Werkervaring.html" afterDir="false" />
+    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="Ik heb de laatse stukjes afgewerkt en ben erna begonnen mat de midde balk daar heb ik ook een diagram bijgevoegd voor de taal ook hat ik de project en werk ervaring aangepast en fotos bijgevoegd erna bij de layout gaan beginnen stijlen en erna was ik geindigd met de footer">
+      <change afterPath="$PROJECT_DIR$/Werkervaring.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projecten.html" beforeDir="false" afterPath="$PROJECT_DIR$/Projecten.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Werkervaring.html" beforeDir="false" afterPath="$PROJECT_DIR$/Werkervaring.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/adams/OneDrive/Desktop/PXL 25-26/WPL1/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Sakhri-Adam" value="36jxz3RGM6GQlZwm5WPWJT8Auzp" />
+    </persistenceIdMap>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -119,7 +124,11 @@
       <workItem from="1768209525339" duration="3000" />
       <workItem from="1768210562031" duration="2313000" />
       <workItem from="1768219733214" duration="2566000" />
-      <workItem from="1768229085694" duration="19638000" />
+      <workItem from="1768229085694" duration="19880000" />
+      <workItem from="1768485594038" duration="586000" />
+      <workItem from="1768488037388" duration="473000" />
+      <workItem from="1768502592170" duration="857000" />
+      <workItem from="1768592554702" duration="9361000" />
     </task>
     <task id="LOCAL-00001" summary="Eerste elementen geplaatst van patroone achtergrond tot gegevens en achtergrond kluer .">
       <option name="closed" value="true" />
@@ -193,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768165768778</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Ik heb de laatse stukjes afgewerkt en ben erna begonnen mat de midde balk daar heb ik ook een diagram bijgevoegd voor de taal ook hat ik de project en werk ervaring aangepast en fotos bijgevoegd erna bij de layout gaan beginnen stijlen en erna was ik geindigd met de footer">
+      <option name="closed" value="true" />
+      <created>1768256036545</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1768256036545</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +225,8 @@
     <MESSAGE value="Ik heb de text over mij toegevoed en mooi geplaats daarna mijn naam in de hoek geplaatst en daarna ook de foto mooie layout gegeven" />
     <MESSAGE value="Heb een tijdslijn aangemaakt voor mijn school carierre daarnaast heb ik de persoons gegevens een lay out gegeven" />
     <MESSAGE value="lay out aangepast ook de contacten aangepast daarna ben ik begonnen met de projesten en heb ik de tijdslijn gepositioneerd" />
-    <option name="LAST_COMMIT_MESSAGE" value="lay out aangepast ook de contacten aangepast daarna ben ik begonnen met de projesten en heb ik de tijdslijn gepositioneerd" />
+    <MESSAGE value="Ik heb de laatse stukjes afgewerkt en ben erna begonnen mat de midde balk daar heb ik ook een diagram bijgevoegd voor de taal ook hat ik de project en werk ervaring aangepast en fotos bijgevoegd erna bij de layout gaan beginnen stijlen en erna was ik geindigd met de footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ik heb de laatse stukjes afgewerkt en ben erna begonnen mat de midde balk daar heb ik ook een diagram bijgevoegd voor de taal ook hat ik de project en werk ervaring aangepast en fotos bijgevoegd erna bij de layout gaan beginnen stijlen en erna was ik geindigd met de footer" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

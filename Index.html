@@ -11,35 +11,43 @@
 </head>
 <body>
 <nav>
-    <h1>Sakhri Adam</h1>
-    <ul class="main-nav">
-        <li><a href="Index.html">Home</a></li>
-        <li><a href=Projecten.html>Projecten</a></li>
-        <li><a href="Werkervaring.html">Contact</a></li>
-    </ul>
+    <div class="container">
+        <h1>Sakhri Adam</h1>
+        <ul class="main-nav">
+            <li><a class="active" href="Index.html">Home</a></li>
+            <li><a href="#content-groep">Mijn leven</a></li>
+            <li><a href="Projecten.html">Projecten</a></li>
+            <li><a href="Werkervaring.html">Werkervaring</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </div>
 </nav>
 <header>
-    <div class="profiel-foto">
-        <img class="me" src="Assets/Pfoto1.jpg" alt="fotoAdamSakhri"/>
-    </div>
-    <div class="hero">
-        <p class="over-mij">
-            Ik ben een 19-jarige sportieve en gemotiveerde jongeman met een positieve werkhouding. Mijn hobby’s zijn
-            voetballen en gamen, wat mij helpt aan mijn doorzettingsvermogen en concentratie. Ook ga ik graag uit en reis
-            ik graag. Ik ben creatief en
-            sta open voor het leren van nieuwe dingen. Daarnaast ben ik hulpvaardig en kan ik goed samenwerken met
-            collega’s, maar functioneer ik ook zelfstandig en neem ik verantwoordelijkheid voor mijn taken. Ik werk
-            doelgericht en zet mij volledig in om kwalitatief werk te leveren en mijzelf verder te ontwikkelen binnen
-            een organisatie.
-            <br>
-            <br>
-            "De reden dat ik voor de richting WebDesign heb gekozen, is dat ik mijn creativiteit digitaal wil weergeven en
-            wil combineren met mijn technische kennis. Ik wil creatieve ideeën omzetten in digitale
-            toepassingen en hiermee professioneel aan de slag gaan, zodat ik mijzelf verder kan ontwikkelen binnen dit
-            vakgebied."
-        </p>
+    <div class="container header-inner">
+        <div class="profiel-foto">
+            <img class="me" src="Assets/Pfoto1.jpg" alt="fotoAdamSakhri"/>
+        </div>
+        <div class="hero">
+            <h2>Over mij</h2>
+            <p class="over-mij">
+                Ik ben een 19-jarige sportieve en gemotiveerde jongeman met een positieve werkhouding. Mijn hobby’s zijn
+                voetballen en gamen, wat mij helpt aan mijn doorzettingsvermogen en concentratie. Ook ga ik graag uit en reis
+                ik graag. Ik ben creatief en sta open voor het leren van nieuwe dingen. Daarnaast ben ik hulpvaardig en kan
+                ik goed samenwerken met collega’s, maar functioneer ik ook zelfstandig en neem ik verantwoordelijkheid voor
+                mijn taken. Ik werk doelgericht en zet mij volledig in om kwalitatief werk te leveren en mijzelf verder te
+                ontwikkelen binnen een organisatie.
+            </p>
+            <div class="hero-actions">
+                <a class="btn-cta" href="Werkervaring.html">Bekijk werkervaring</a>
+                <a class="btn-outline" href="Projecten.html">Mijn projecten</a>
+            </div>
+            <p class="over-mij" style="margin-top:12px; font-style:italic;">"De reden dat ik voor WebDesign heb gekozen is om creativiteit met techniek te combineren."</p>
+        </div>
     </div>
 </header>
+
+<!-- Wikkel hoofdcontent in container zodat CSS grid werkt -->
+<div class="container">
 <div class="middelbalk" >
     <section class="persoon-gegevens">
         <ul>
@@ -56,6 +64,10 @@
                 <p>Hogeschoolstudent, PXL</p>
             </li>
         </ul>
+        <!-- Toegevoegd: responsive radar (spider) chart -->
+        <div class="spider-wrapper" aria-label="skills radar chart">
+            <canvas id="skillsRadar" aria-hidden="false"></canvas>
+        </div>
     </section>
         <div class="language-container">
             <!-- Sectie: Nederlands -->
@@ -109,7 +121,8 @@
 
         </div>
 </div>
-<div class="content-groep">
+
+<div id="content-groep" class="content-groep">
     <div class="bottom-content" >
         <section class="timeline">
         <h1>Mijn schoolcarrière</h1>
@@ -173,9 +186,10 @@
         </div>
     </div>
 </div>
-<footer class="footer">
+</div>
+<footer id="footer" class="footer">
     <div class="contacts">
-        <a href="mailto:Sakhriadam5@gmail.com"></a>
+        <a href="mailto:Sakhriadam52@gmail.com"></a>
     </div>
     <div class="contacts">
         <a href="tel:0492436359"></a>
@@ -186,6 +200,77 @@
     <p>© 2024 Sakhri Adam. All rights reserved.</p>
 </footer>
 
+<!-- Toegevoegd Chart.js CDN en initialisatie voor de radar chart -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<script>
+  (function () {
+    const ctx = document.getElementById('skillsRadar');
+    if (!ctx) return;
+    const context = ctx.getContext('2d');
+
+    const data = {
+      labels: [
+        'Perfectie',
+        'Klantgerichtheid',
+        'Gemotiveerd',
+        'Hulpvaardig',
+        'Sociaal',
+        'Doorzettingsnvermogen'
+      ],
+      datasets: [{
+        label: 'Skills (uit 5)',
+        data: [3, 4, 5, 4, 4, 4],
+        fill: true,
+        backgroundColor: 'rgba(17,42,87,0.12)',
+        borderColor: '#112A57',
+        borderWidth: 2,
+        pointBackgroundColor: '#C4AD9D',
+        pointBorderColor: '#112A57',
+        pointRadius: 4,
+      }]
+    };
+
+    const options = {
+      responsive: true,
+      // Laat de container (wrapper) de afmetingen bepalen zodat er ruimte is voor labels
+      maintainAspectRatio: false,
+      // Kleine layout padding om labels niet te laten knellen
+      layout: { padding: { left: 8, right: 8, top: 8, bottom: 8 } },
+      scales: {
+        r: {
+          min: 0,
+          max: 5,
+          ticks: { stepSize: 1, color: '#0a0a0a' },
+          grid: { color: 'rgba(0,0,0,0.06)' },
+          angleLines: { color: 'rgba(0,0,0,0.06)' },
+          pointLabels: {
+            color: '#0a0a0a',
+            font: { family: 'Inter, sans-serif', size: 11 },
+            padding: 10
+          }
+        }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          titleColor: '#0a0a0a',
+          bodyColor: '#0a0a0a',
+          backgroundColor: 'rgba(255,255,255,0.95)',
+          borderColor: 'rgba(0,0,0,0.06)',
+          borderWidth: 1,
+          callbacks: {
+            label: (ctx) => `${ctx.label}: ${ctx.formattedValue}/5`
+          }
+        }
+      }
+    };
+
+    // Maak chart aan
+    // Sla de instance op het canvas element zodat deze makkelijk te resetten is
+    if (context._chartInstance) context._chartInstance.destroy();
+    context._chartInstance = new Chart(context, { type: 'radar', data: data, options: options });
+  })();
+</script>
 
 </body>
 </html>
