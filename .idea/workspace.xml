@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="Ik heb de laatse stukjes afgewerkt en ben erna begonnen mat de midde balk daar heb ik ook een diagram bijgevoegd voor de taal ook hat ik de project en werk ervaring aangepast en fotos bijgevoegd erna bij de layout gaan beginnen stijlen en erna was ik geindigd met de footer">
-      <change afterPath="$PROJECT_DIR$/Werkervaring.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WerkErv.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/12979732_5102024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pfoto1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/adam-sakhri.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/camila-blando-NNPHctRuAi8-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/markus-winkler-Q2J2qQsoYH8-unsplash.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projecten.html" beforeDir="false" afterPath="$PROJECT_DIR$/Projecten.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Werkervaring.html" beforeDir="false" afterPath="$PROJECT_DIR$/Werkervaring.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +25,7 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
+      <entry key="_C:/Users/adams/Documents/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Sakhri-Adam" value="3FxgUv6Kd5p8dRzsTf70O1ebWU5" />
       <entry key="_C:/Users/adams/OneDrive/Desktop/PXL 25-26/WPL1/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Sakhri-Adam" value="36jxz3RGM6GQlZwm5WPWJT8Auzp" />
     </persistenceIdMap>
   </component>
@@ -53,6 +60,21 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -65,8 +87,9 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/adams/OneDrive/Desktop/PXL 25-26/WPL1/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Sakhri-Adam&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/adams/Documents/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Sakhri-Adam&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -80,7 +103,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-WS-252.28238.10" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-WS-252.28539.60" />
       </set>
     </attachedChunks>
   </component>
@@ -129,6 +152,8 @@
       <workItem from="1768488037388" duration="473000" />
       <workItem from="1768502592170" duration="857000" />
       <workItem from="1768592554702" duration="9361000" />
+      <workItem from="1783022156008" duration="399000" />
+      <workItem from="1783067578966" duration="594000" />
     </task>
     <task id="LOCAL-00001" summary="Eerste elementen geplaatst van patroone achtergrond tot gegevens en achtergrond kluer .">
       <option name="closed" value="true" />
