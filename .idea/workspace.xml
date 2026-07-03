@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="Heb de site een reset gegeven">
-      <change afterPath="$PROJECT_DIR$/Assets/IMG_1103.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/projecten ptf.jpg" afterDir="false" />
+    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="Ik heb de laatse stukjes afgewerkt en ben erna begonnen mat de midde balk daar heb ik ook een diagram bijgevoegd voor de taal ook hat ik de project en werk ervaring aangepast en fotos bijgevoegd erna bij de layout gaan beginnen stijlen en erna was ik geindigd met de footer">
+      <change afterPath="$PROJECT_DIR$/Werkervaring.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projecten.html" beforeDir="false" afterPath="$PROJECT_DIR$/Projecten.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Werkervaring.html" beforeDir="false" afterPath="$PROJECT_DIR$/Werkervaring.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +19,6 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
-      <entry key="_C:/Users/adams/Documents/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Sakhri-Adam" value="3FxgUv6Kd5p8dRzsTf70O1ebWU5" />
       <entry key="_C:/Users/adams/OneDrive/Desktop/PXL 25-26/WPL1/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Sakhri-Adam" value="36jxz3RGM6GQlZwm5WPWJT8Auzp" />
     </persistenceIdMap>
   </component>
@@ -51,21 +53,6 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectSessionTemplates">
-    <option name="panelTemplate">
-      <template>
-        <option name="modeId" value="Agent" />
-        <option name="model">
-          <model>
-            <option name="modelType" value="builtin_id" />
-            <option name="modelValue" value="auto" />
-          </model>
-        </option>
-        <option name="targetType" value="BACKGROUND" />
-        <option name="worktreeMode" value="WORKSPACE" />
-      </template>
-    </option>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -78,9 +65,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/adams/Documents/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Sakhri-Adam&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/adams/OneDrive/Desktop/PXL 25-26/WPL1/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Sakhri-Adam&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -94,7 +80,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-WS-252.28539.60" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-WS-252.28238.10" />
       </set>
     </attachedChunks>
   </component>
@@ -143,8 +129,6 @@
       <workItem from="1768488037388" duration="473000" />
       <workItem from="1768502592170" duration="857000" />
       <workItem from="1768592554702" duration="9361000" />
-      <workItem from="1783022156008" duration="399000" />
-      <workItem from="1783067578966" duration="4116000" />
     </task>
     <task id="LOCAL-00001" summary="Eerste elementen geplaatst van patroone achtergrond tot gegevens en achtergrond kluer .">
       <option name="closed" value="true" />
@@ -226,15 +210,7 @@
       <option name="project" value="LOCAL" />
       <updated>1768256036545</updated>
     </task>
-    <task id="LOCAL-00011" summary="Heb de site een reset gegeven">
-      <option name="closed" value="true" />
-      <created>1783068566332</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1783068566332</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,8 +226,7 @@
     <MESSAGE value="Heb een tijdslijn aangemaakt voor mijn school carierre daarnaast heb ik de persoons gegevens een lay out gegeven" />
     <MESSAGE value="lay out aangepast ook de contacten aangepast daarna ben ik begonnen met de projesten en heb ik de tijdslijn gepositioneerd" />
     <MESSAGE value="Ik heb de laatse stukjes afgewerkt en ben erna begonnen mat de midde balk daar heb ik ook een diagram bijgevoegd voor de taal ook hat ik de project en werk ervaring aangepast en fotos bijgevoegd erna bij de layout gaan beginnen stijlen en erna was ik geindigd met de footer" />
-    <MESSAGE value="Heb de site een reset gegeven" />
-    <option name="LAST_COMMIT_MESSAGE" value="Heb de site een reset gegeven" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ik heb de laatse stukjes afgewerkt en ben erna begonnen mat de midde balk daar heb ik ook een diagram bijgevoegd voor de taal ook hat ik de project en werk ervaring aangepast en fotos bijgevoegd erna bij de layout gaan beginnen stijlen en erna was ik geindigd met de footer" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
