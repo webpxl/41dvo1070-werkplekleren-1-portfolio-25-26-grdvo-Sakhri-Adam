@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="Heb de site een reset gegeven">
-      <change afterPath="$PROJECT_DIR$/Assets/IMG_1103.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/projecten ptf.jpg" afterDir="false" />
+    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="Kleine aanpassingen">
+      <change afterPath="$PROJECT_DIR$/Assets/IMG_2787.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Overmij.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projecten.html" beforeDir="false" afterPath="$PROJECT_DIR$/Projecten.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Werkervaring.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +35,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -91,6 +97,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\adams\Documents\41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Sakhri-Adam" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -234,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783068566332</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Kleine aanpassingen">
+      <option name="closed" value="true" />
+      <created>1783092778316</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1783092778316</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +270,8 @@
     <MESSAGE value="lay out aangepast ook de contacten aangepast daarna ben ik begonnen met de projesten en heb ik de tijdslijn gepositioneerd" />
     <MESSAGE value="Ik heb de laatse stukjes afgewerkt en ben erna begonnen mat de midde balk daar heb ik ook een diagram bijgevoegd voor de taal ook hat ik de project en werk ervaring aangepast en fotos bijgevoegd erna bij de layout gaan beginnen stijlen en erna was ik geindigd met de footer" />
     <MESSAGE value="Heb de site een reset gegeven" />
-    <option name="LAST_COMMIT_MESSAGE" value="Heb de site een reset gegeven" />
+    <MESSAGE value="Kleine aanpassingen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kleine aanpassingen" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

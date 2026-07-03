@@ -217,17 +217,31 @@ img { max-width: 100%; display: block; }
     margin: 0;
 }
 
+/* ============ Skills layout (soft + hard) ============ */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: clamp(32px, 5vw, 64px);
+    align-items: start;
+}
+.skills-block h3 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.35rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: 0 0 20px;
+    text-align: center;
+}
+
 /* ============ Radar chart ============ */
-.radar-wrap {
+.radar-wrap, .bars-wrap {
     display: flex;
     justify-content: center;
-    opacity: 0;
-    transform: translateY(16px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
 }
-.radar-wrap.in-view { opacity: 1; transform: translateY(0); }
-#radar-chart {
-    width: min(100%, 560px);
+#radar-chart, #hardskills-chart {
+    width: min(100%, 480px);
     height: auto;
 }
 
@@ -266,9 +280,7 @@ img { max-width: 100%; display: block; }
 }
 .bar-fill {
     height: 100%;
-    width: 0%;
     background: var(--blue);
-    transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .bar-num {
     font-family: var(--font-display);
@@ -291,11 +303,7 @@ img { max-width: 100%; display: block; }
     display: grid;
     grid-template-columns: 140px 1fr;
     gap: 4px 20px;
-    opacity: 0;
-    transform: translateX(-12px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
 }
-.timeline li.in-view { opacity: 1; transform: translateX(0); }
 .timeline li::before {
     content: "";
     position: absolute;

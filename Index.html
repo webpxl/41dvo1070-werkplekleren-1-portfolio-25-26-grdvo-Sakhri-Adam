@@ -1,276 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Adam.Sakhri</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="Style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Sakhri — Digitale Vormgeving Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-    <div class="container">
-        <h1>Sakhri Adam</h1>
-        <ul class="main-nav">
-            <li><a class="active" href="Index.html">Home</a></li>
-            <li><a href="#content-groep">Mijn leven</a></li>
-            <li><a href="Projecten.html">Projecten</a></li>
-            <li><a href="Werkervaring.html">Werkervaring</a></li>
-            <li><a href="#footer">Contact</a></li>
-        </ul>
+
+<div class="spine" aria-hidden="true">
+    <span>ADAM SAKHRI</span><span class="spine-dot">&#9679;</span><span>DIGITALE VORMGEVING</span><span class="spine-dot">&#9679;</span><span>PXL HASSELT</span><span class="spine-dot">&#9679;</span>
+</div>
+
+<header class="hero" id="top">
+    <div class="hero-photo">
+        <img src="Assets/adam-sakhri.jpg" alt="Portret van Adam Sakhri, gefotografeerd bij een kanaal in Venetië" loading="eager">
     </div>
-</nav>
-<header>
-    <div class="container header-inner">
-        <div class="profiel-foto">
-            <img class="me" src="Assets/Pfoto1.jpg" alt="fotoAdamSakhri"/>
-        </div>
-        <div class="hero">
-            <h2>Over mij</h2>
-            <p class="over-mij">
-                Ik ben een 19-jarige sportieve en gemotiveerde jongeman met een positieve werkhouding. Mijn hobby’s zijn
-                voetballen en gamen, wat mij helpt aan mijn doorzettingsvermogen en concentratie. Ook ga ik graag uit en reis
-                ik graag. Ik ben creatief en sta open voor het leren van nieuwe dingen. Daarnaast ben ik hulpvaardig en kan
-                ik goed samenwerken met collega’s, maar functioneer ik ook zelfstandig en neem ik verantwoordelijkheid voor
-                mijn taken. Ik werk doelgericht en zet mij volledig in om kwalitatief werk te leveren en mijzelf verder te
-                ontwikkelen binnen een organisatie.
-            </p>
-            <div class="hero-actions">
-                <a class="btn-cta" href="Werkervaring.html">Bekijk werkervaring</a>
-                <a class="btn-outline" href="Projecten.html">Mijn projecten</a>
-            </div>
-            <p class="over-mij" style="margin-top:12px; font-style:italic;">"De reden dat ik voor WebDesign heb gekozen is om creativiteit met techniek te combineren."</p>
-        </div>
+    <div class="hero-name">
+        <h1><span class="line">ADAM</span><span class="line accent">SAKHRI</span></h1>
     </div>
+    <dl class="hero-meta">
+        <div><dt>Geboren</dt><dd>22/02/2007</dd></div>
+        <div><dt>Nationaliteit</dt><dd>Belg</dd></div>
+        <div><dt>Woonplaats</dt><dd>Meerhout 2450</dd></div>
+        <div><dt>School</dt><dd>PXL Hasselt</dd></div>
+    </dl>
+    <a class="scroll-cue" href="#over-mij" aria-label="Scroll naar volgende sectie">
+        <span></span>Scroll
+    </a>
 </header>
 
-<!-- Wikkel hoofdcontent in container zodat CSS grid werkt -->
-<div class="container">
-<div class="middelbalk" >
-    <section class="persoon-gegevens">
-        <ul>
-            <li>
-                <p>22/02/2007</p>
-            </li>
-            <li>
-                <p>Belg</p>
-            </li>
-            <li>
-                <p>Meerhout 2450</p>
-            </li>
-            <li>
-                <p>Hogeschoolstudent, PXL</p>
-            </li>
-        </ul>
-        <!-- Toegevoegd: responsive radar (spider) chart -->
-        <div class="spider-wrapper" aria-label="skills radar chart">
-            <canvas id="skillsRadar" aria-hidden="false"></canvas>
+<main>
+
+    <section class="section" id="over-mij">
+        <p class="eyebrow">Over mij</p>
+        <p class="lede">
+            Ik ben een 19-jarige sportieve en gemotiveerde jongeman met een positieve werkhouding.
+            Mijn hobby's zijn voetballen en gamen, wat mij helpt aan mijn doorzettingsvermogen en concentratie.
+            Ook ga ik graag uit en reis ik graag.
+        </p>
+        <p class="body-text">
+            Ik ben creatief en sta open voor het leren van nieuwe dingen. Daarnaast ben ik hulpvaardig en kan ik
+            goed samenwerken met collega's, maar functioneer ik ook zelfstandig en neem ik verantwoordelijkheid
+            voor mijn taken. Ik werk doelgericht en zet mij volledig in om kwalitatief werk te leveren en mijzelf
+            verder te ontwikkelen binnen een organisatie.
+        </p>
+    </section>
+
+    <section class="section" id="competenties">
+        <p class="eyebrow">Vaardigheden</p>
+        <div class="skills-grid">
+            <div class="skills-block">
+                <h3>Soft skills</h3>
+                <div class="radar-wrap">
+                    <canvas id="radar-chart" width="600" height="600" role="img" aria-label="Radargrafiek van competenties: Perfectie 4 op 5, Klantgerichtheid 3 op 5, Gemotiveerd 5 op 5, Hulpvaardig 4 op 5, Sociaal 4 op 5, Doorzettingsvermogen 4 op 5"></canvas>
+                </div>
+            </div>
+            <div class="skills-block">
+                <h3>Hard skills</h3>
+                <div class="bars-wrap">
+                    <canvas id="hardskills-chart" width="600" height="600" role="img" aria-label="Staafgrafiek van hard skills: Figma 4 op 5, Illustrator 4 op 5, Photoshop 3.5 op 5, HTML 4 op 5"></canvas>
+                </div>
+            </div>
         </div>
     </section>
-        <div class="language-container">
-            <!-- Sectie: Nederlands -->
-            <div class="language-group">
-                <h3 class="kort-taal">Nederlands</h3>
-                <div class="skill-item">
-                    <div class="skill-info"><span>Spreken</span><span>5/5</span></div>
-                    <div class="skill-bar"><div class="progress" style="width: 100%; background-color: #2353AD;"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info"><span>Schrijven</span><span>5/5</span></div>
-                    <div class="skill-bar"><div class="progress" style="width: 100%; background-color: #A08E82;"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info"><span>Begrijpen</span><span>5/5</span></div>
-                    <div class="skill-bar"><div class="progress" style="width: 100%; background-color: #FFFFFF; border: 1px solid #A08E82;"></div></div>
-                </div>
+
+    <section class="section" id="talen">
+        <p class="eyebrow">Talenkennis</p>
+        <div class="lang-grid">
+
+            <div class="lang-block" data-lang="Nederlands">
+                <h3>Nederlands</h3>
+                <div class="bar-row"><span class="bar-label">Spreken</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="bar-num">5/5</span></div>
+                <div class="bar-row"><span class="bar-label">Schrijven</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="bar-num">5/5</span></div>
+                <div class="bar-row"><span class="bar-label">Begrijpen</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="bar-num">5/5</span></div>
             </div>
-            <!-- Sectie: Engels -->
-            <div class="language-group">
-                <h3 class="kort-taal">Engels</h3>
-                <div class="skill-item">
-                    <div class="skill-info"><span>Spreken</span><span>4/5</span></div>
-                    <div class="skill-bar"><div class="progress" style="width: 80%; background-color: #2353AD;"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info"><span>Schrijven</span><span>4/5</span></div>
-                    <div class="skill-bar"><div class="progress" style="width: 80%; background-color: #A08E82;"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info"><span>Begrijpen</span><span>5/5</span></div>
-                    <div class="skill-bar"><div class="progress" style="width: 100%; background-color: #FFFFFF; border: 1px solid #A08E82;"></div></div>
-                </div>
+
+            <div class="lang-block" data-lang="Engels">
+                <h3>Engels</h3>
+                <div class="bar-row"><span class="bar-label">Spreken</span><div class="bar-track"><div class="bar-fill" style="width:80%"></div></div><span class="bar-num">4/5</span></div>
+                <div class="bar-row"><span class="bar-label">Schrijven</span><div class="bar-track"><div class="bar-fill" style="width:80%"></div></div><span class="bar-num">4/5</span></div>
+                <div class="bar-row"><span class="bar-label">Begrijpen</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="bar-num">5/5</span></div>
             </div>
-            <!-- Sectie: Marokkaans-Arabisch -->
-            <div class="language-group">
-                <h3>Marokkaans-Arabisch</h3>
-                <div class="skill-item">
-                    <div class="skill-info"><span>Spreken</span><span>4/5</span></div>
-                    <div class="skill-bar"><div class="progress" style="width: 80%; background-color: #2353AD;"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info"><span>Schrijven</span><span>3/5</span></div>
-                    <div class="skill-bar"><div class="progress" style="width: 60%; background-color: #A08E82;"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info"><span>Begrijpen</span><span>5/5</span></div>
-                    <div class="skill-bar"><div class="progress" style="width: 100%; background-color: #FFFFFF; border: 1px solid #A08E82;"></div></div>
-                </div>
+
+            <div class="lang-block" data-lang="Marokkaans Arabisch">
+                <h3>Marokkaans Arabisch</h3>
+                <div class="bar-row"><span class="bar-label">Spreken</span><div class="bar-track"><div class="bar-fill" style="width:80%"></div></div><span class="bar-num">4/5</span></div>
+                <div class="bar-row"><span class="bar-label">Schrijven</span><div class="bar-track"><div class="bar-fill" style="width:60%"></div></div><span class="bar-num">3/5</span></div>
+                <div class="bar-row"><span class="bar-label">Begrijpen</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="bar-num">5/5</span></div>
             </div>
 
         </div>
-</div>
-
-<div id="content-groep" class="content-groep">
-    <div class="bottom-content" >
-        <section class="timeline">
-        <h1>Mijn schoolcarrière</h1>
-
-        <div class="timeline-item">
-            <span class="year">2015</span>
-            <div class="content">
-                <h2>Workshop coderen</h2>
-                <p>Scratch</p>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <span class="year">2019-2021</span>
-            <div class="content">
-                <h2>1e graad middelbaar</h2>
-                <p>Sport Wetenschappen en
-                    Stem-Techniek</p>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <span class="year">2021-2023</span>
-            <div class="content">
-                <h2>2e graad middelbaar</h2>
-                <p>STEM: Elektriciteit</p>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <span class="year">2023-2025</span>
-            <div class="content">
-                <h2>3e graad middelbaar</h2>
-                <p>Datacommunicatie en Netwerkinstallaties</p>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <span class="year">2025-heden</span>
-            <div class="content">
-                <h2>Hogeschool PXL</h2>
-                <p>Web.Design</p>
-            </div>
-        </div>
-
     </section>
-        <div class="groep">
-            <section class="projecten">
-                <h2>projecten</h2>
-                <div class="project-link">
-                    <a href="Projecten.html"><img src="Assets/markus-winkler-Q2J2qQsoYH8-unsplash.jpg" alt="Projecten"/></a>
+
+    <section class="section" id="schoolcarriere">
+        <p class="eyebrow">Schoolcarrière</p>
+        <ol class="timeline">
+            <li>
+                <span class="tl-year">2015</span>
+                <span class="tl-title">Workshop Coderen</span>
+                <span class="tl-desc">Via Scratch</span>
+            </li>
+            <li>
+                <span class="tl-year">2019&ndash;2021</span>
+                <span class="tl-title">1e graad middelbaar</span>
+                <span class="tl-desc">Sport-Wetenschappen &amp; Stem-Techniek</span>
+            </li>
+            <li>
+                <span class="tl-year">2021&ndash;2023</span>
+                <span class="tl-title">2e graad middelbaar</span>
+                <span class="tl-desc">Stem-Elektriciteit</span>
+            </li>
+            <li>
+                <span class="tl-year">2023&ndash;2025</span>
+                <span class="tl-title">3e graad middelbaar</span>
+                <span class="tl-desc">Datacommunicatie &amp; Netwerkinstallaties</span>
+            </li>
+            <li class="current">
+                <span class="tl-year">2025&ndash;heden</span>
+                <span class="tl-title">Hogeschool PXL</span>
+                <span class="tl-desc">Digitale Vormgeving Design</span>
+            </li>
+        </ol>
+    </section>
+
+    <section class="section links-section" id="verder">
+        <p class="eyebrow">Verder bekijken</p>
+        <div class="link-grid">
+            <a class="link-card" href="Projecten.html
+">
+                <div class="link-card-media">
+                    <img src="Assets/projecten%20ptf.jpg" alt="" loading="lazy">
                 </div>
-            </section>
-            <section class="werkervaring">
-                <h2>Werkervaring</h2>
-                <div class="werkervaring-link">
-                    <a href="Werkervaring.html"><img src="Assets/camila-blando-NNPHctRuAi8-unsplash.jpg"
-                                                     alt="werkervaring"/></a>
+                <span class="link-card-label">Projecten<span class="arrow">&#8594;</span></span>
+            </a>
+            <a class="link-card" href="WerkErv.html">
+                <div class="link-card-media">
+                    <img src="Assets/IMG_1103.JPG" alt="" loading="lazy">
                 </div>
-            </section>
+                <span class="link-card-label">Werkervaring<span class="arrow">&#8594;</span></span>
+            </a>
+            <a class="link-card" href="Overmij.html">
+                <div class="link-card-media">
+                    <img src="Assets/IMG_2787.JPG" alt="" loading="lazy">
+                </div>
+                <span class="link-card-label">Over mij<span class="arrow">&#8594;</span></span>
+            </a>
         </div>
-    </div>
-</div>
-</div>
-<footer id="footer" class="footer">
-    <div class="contacts">
-        <a href="mailto:Sakhriadam52@gmail.com"></a>
-    </div>
-    <div class="contacts">
-        <a href="tel:0492436359"></a>
-    </div>
-    <div class="contacts">
-        <a href="https://www.instagram.com/adam.sakhri/"></a>
-    </div>
-    <p>© 2024 Sakhri Adam. All rights reserved.</p>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>Adam Sakhri &mdash; Meerhout, België</p>
+    <a href="#top">Terug naar boven &#8593;</a>
 </footer>
 
-<!-- Toegevoegd Chart.js CDN en initialisatie voor de radar chart -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
-<script>
-  (function () {
-    const ctx = document.getElementById('skillsRadar');
-    if (!ctx) return;
-    const context = ctx.getContext('2d');
-
-    const data = {
-      labels: [
-        'Perfectie',
-        'Klantgerichtheid',
-        'Gemotiveerd',
-        'Hulpvaardig',
-        'Sociaal',
-        'Doorzettingsnvermogen'
-      ],
-      datasets: [{
-        label: 'Skills (uit 5)',
-        data: [3, 4, 5, 4, 4, 4],
-        fill: true,
-        backgroundColor: 'rgba(17,42,87,0.12)',
-        borderColor: '#112A57',
-        borderWidth: 2,
-        pointBackgroundColor: '#C4AD9D',
-        pointBorderColor: '#112A57',
-        pointRadius: 4,
-      }]
-    };
-
-    const options = {
-      responsive: true,
-      // Laat de container (wrapper) de afmetingen bepalen zodat er ruimte is voor labels
-      maintainAspectRatio: false,
-      // Kleine layout padding om labels niet te laten knellen
-      layout: { padding: { left: 8, right: 8, top: 8, bottom: 8 } },
-      scales: {
-        r: {
-          min: 0,
-          max: 5,
-          ticks: { stepSize: 1, color: '#0a0a0a' },
-          grid: { color: 'rgba(0,0,0,0.06)' },
-          angleLines: { color: 'rgba(0,0,0,0.06)' },
-          pointLabels: {
-            color: '#0a0a0a',
-            font: { family: 'Inter, sans-serif', size: 11 },
-            padding: 10
-          }
-        }
-      },
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          titleColor: '#0a0a0a',
-          bodyColor: '#0a0a0a',
-          backgroundColor: 'rgba(255,255,255,0.95)',
-          borderColor: 'rgba(0,0,0,0.06)',
-          borderWidth: 1,
-          callbacks: {
-            label: (ctx) => `${ctx.label}: ${ctx.formattedValue}/5`
-          }
-        }
-      }
-    };
-
-    // Maak chart aan
-    // Sla de instance op het canvas element zodat deze makkelijk te resetten is
-    if (context._chartInstance) context._chartInstance.destroy();
-    context._chartInstance = new Chart(context, { type: 'radar', data: data, options: options });
-  })();
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
