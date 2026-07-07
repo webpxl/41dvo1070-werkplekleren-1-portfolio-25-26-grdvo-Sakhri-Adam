@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="Kleine aanpassingen">
-      <change afterPath="$PROJECT_DIR$/Assets/IMG_2787.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Overmij.html" afterDir="false" />
+    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="Projecten pagina aangemaakt">
+      <change afterPath="$PROJECT_DIR$/Assets/Achtergrndhome.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Banner_BriBri.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Banner_LI_ADAMSAKHRI.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bground15.06.26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/KELSMSF_WIT.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MC_G-TH.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Personal Logo_AdamSakhri.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SALMund.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Schermafbeelding 2026-07-03 213735.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projecten.html" beforeDir="false" afterPath="$PROJECT_DIR$/Projecten.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Werkervaring.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,6 +159,7 @@
       <workItem from="1768592554702" duration="9361000" />
       <workItem from="1783022156008" duration="399000" />
       <workItem from="1783067578966" duration="4116000" />
+      <workItem from="1783413699355" duration="1509000" />
     </task>
     <task id="LOCAL-00001" summary="Eerste elementen geplaatst van patroone achtergrond tot gegevens en achtergrond kluer .">
       <option name="closed" value="true" />
@@ -253,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783092778316</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Projecten pagina aangemaakt">
+      <option name="closed" value="true" />
+      <created>1783413775756</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1783413775756</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +283,8 @@
     <MESSAGE value="Ik heb de laatse stukjes afgewerkt en ben erna begonnen mat de midde balk daar heb ik ook een diagram bijgevoegd voor de taal ook hat ik de project en werk ervaring aangepast en fotos bijgevoegd erna bij de layout gaan beginnen stijlen en erna was ik geindigd met de footer" />
     <MESSAGE value="Heb de site een reset gegeven" />
     <MESSAGE value="Kleine aanpassingen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kleine aanpassingen" />
+    <MESSAGE value="Projecten pagina aangemaakt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Projecten pagina aangemaakt" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
