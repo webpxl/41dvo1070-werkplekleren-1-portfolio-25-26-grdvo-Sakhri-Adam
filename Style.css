@@ -31,6 +31,7 @@ body {
     font-family: var(--font-body);
     padding-left: var(--spine-w);
     overflow-x: hidden;
+    overflow-wrap: break-word;
 }
 
 a { color: inherit; }
@@ -80,6 +81,7 @@ img { max-width: 100%; display: block; }
     grid-column: 1;
     grid-row: 1 / span 2;
     height: 100svh;
+    min-width: 0;
     overflow: hidden;
     position: relative;
 }
@@ -102,6 +104,7 @@ img { max-width: 100%; display: block; }
     align-self: center;
     padding: 0 var(--edge);
     z-index: 2;
+    min-width: 0;
 }
 .hero-name h1 {
     margin: 0;
@@ -123,6 +126,7 @@ img { max-width: 100%; display: block; }
     padding: 0 var(--edge) clamp(32px, 6vh, 72px);
     margin: 0;
     z-index: 2;
+    min-width: 0;
 }
 .hero-meta div { border-top: 1px solid var(--surface-line); padding-top: 10px; }
 .hero-meta dt {
@@ -190,6 +194,7 @@ img { max-width: 100%; display: block; }
     color: var(--blue);
     margin: 0 0 clamp(24px, 4vh, 40px);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 12px;
 }
@@ -220,7 +225,7 @@ img { max-width: 100%; display: block; }
 /* ============ Skills layout (soft + hard) ============ */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
     gap: clamp(32px, 5vw, 64px);
     align-items: start;
 }
@@ -239,16 +244,18 @@ img { max-width: 100%; display: block; }
 .radar-wrap, .bars-wrap {
     display: flex;
     justify-content: center;
+    min-width: 0;
 }
 #radar-chart, #hardskills-chart {
     width: min(100%, 480px);
     height: auto;
+    min-width: 0;
 }
 
 /* ============ Language bars ============ */
 .lang-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
     gap: clamp(32px, 5vw, 56px);
 }
 .lang-block h3 {
@@ -343,7 +350,7 @@ img { max-width: 100%; display: block; }
 /* ============ Link cards ============ */
 .link-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
     gap: 20px;
 }
 .link-card {
@@ -386,6 +393,81 @@ img { max-width: 100%; display: block; }
 .arrow { color: var(--blue); transition: transform 0.3s ease; }
 .link-card:hover .arrow, .link-card:focus-visible .arrow { transform: translateX(6px); }
 
+/* ============ Project galleries (Projecten page) ============ */
+.gallery-title {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.3rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: clamp(40px, 6vh, 64px) 0 20px;
+}
+.gallery-title--first { margin-top: 0; }
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    gap: 24px;
+    align-items: start;
+}
+.project-card {
+    background: var(--surface);
+    border: 1px solid var(--surface-line);
+}
+.project-card-media {
+    display: flex;
+}
+.project-card-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.project-card-media--light {
+    background: var(--white);
+    padding: 28px;
+}
+.project-card-media--light img {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.project-card-caption {
+    padding: 16px 18px 20px;
+    border-top: 1px solid var(--surface-line);
+}
+.pc-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: 0 0 6px;
+}
+.pc-desc {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.68);
+    margin: 0;
+}
+
+/* ============ Press card (HLN feature) ============ */
+.press-card {
+    margin-top: clamp(28px, 4vh, 44px);
+    border: 1px solid var(--surface-line);
+    background: var(--surface);
+    max-width: 720px;
+}
+.press-card img { width: 100%; height: auto; display: block; }
+.press-caption {
+    padding: 14px 18px;
+    border-top: 1px solid var(--surface-line);
+    font-size: 0.85rem;
+    color: var(--taupe);
+    margin: 0;
+}
+
 /* ============ Footer ============ */
 .footer {
     padding: 28px var(--edge) 40px;
@@ -427,4 +509,9 @@ img { max-width: 100%; display: block; }
     }
     .scroll-cue { display: none; }
     .bar-row { grid-template-columns: 68px 1fr 30px; }
+}
+
+@media (max-width: 360px) {
+    .hero-name h1 { font-size: clamp(2.2rem, 13vw, 9rem); }
+    .hero-meta { grid-template-columns: 1fr; }
 }
