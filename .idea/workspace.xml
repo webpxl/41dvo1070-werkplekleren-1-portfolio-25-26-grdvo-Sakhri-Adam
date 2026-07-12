@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="Projecten pagina afbeeldingen toegevoegd">
+    <list default="true" id="e5886413-0ee2-4695-b90e-e377a3c048d5" name="Changes" comment="Responsiviteit gefixt en ook Werkervaring begin aangewerkt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projecten.html" beforeDir="false" afterPath="$PROJECT_DIR$/Projecten.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WerkErv.html" beforeDir="false" afterPath="$PROJECT_DIR$/WerkErv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Overmij.html" beforeDir="false" afterPath="$PROJECT_DIR$/Overmij.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +151,8 @@
       <workItem from="1783022156008" duration="399000" />
       <workItem from="1783067578966" duration="4116000" />
       <workItem from="1783413699355" duration="3490000" />
-      <workItem from="1783502150552" duration="3713000" />
+      <workItem from="1783502150552" duration="4134000" />
+      <workItem from="1783852482428" duration="2023000" />
     </task>
     <task id="LOCAL-00001" summary="Eerste elementen geplaatst van patroone achtergrond tot gegevens en achtergrond kluer .">
       <option name="closed" value="true" />
@@ -268,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783415697168</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Responsiviteit gefixt en ook Werkervaring begin aangewerkt">
+      <option name="closed" value="true" />
+      <created>1783506087154</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1783506087154</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +294,8 @@
     <MESSAGE value="Kleine aanpassingen" />
     <MESSAGE value="Projecten pagina aangemaakt" />
     <MESSAGE value="Projecten pagina afbeeldingen toegevoegd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Projecten pagina afbeeldingen toegevoegd" />
+    <MESSAGE value="Responsiviteit gefixt en ook Werkervaring begin aangewerkt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Responsiviteit gefixt en ook Werkervaring begin aangewerkt" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
